@@ -21,13 +21,15 @@ body{
     background-color: #05445E;
     width: 100%;
     height: auto;
-    padding-top: 3.5%;
 }
 
 .menu a{
     color: white;
     text-decoration: none;
     padding: 10px;
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
 }
 
 
@@ -37,12 +39,33 @@ a:visited{
     
 }
 
-.menu a:hover{
-    border: 5px solid white;
-    padding: 10px;
 
+.menu a:hover{
+    padding: 10px;
 }
 
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #EC1B24;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.current a{
+    text-decoration: underline;
+    text-underline-offset: 50%;
+}
 
 .logo{
     padding-left: 2.5%;
@@ -55,11 +78,13 @@ a:visited{
     list-style-type: none;
     margin-left: 5%;
     font-size: 40px;
+    padding: 2.5% 2.5%;
 }
 
 .menu ul{
     display: flex;
 }
+
 
 .contact{
     background-color: #05445E;
@@ -108,8 +133,14 @@ a:visited{
 }
 
 footer{
-    padding-top: 2%;
+    padding-top: 1%;
     background-color: #D9D9D9;
+    font-size: 25px;
+    padding-bottom: 1%;
+}
+
+.foot{
+    text-align: center;
 }
 
 .er{
@@ -123,10 +154,8 @@ footer{
     justify-content: center;
 }
 
-.foot{
-    display: flex;
-    justify-content: center;
-}
+
+
 .sectionH{
     display: flex;
     /*margin-top: 12.75%;*/
@@ -249,6 +278,7 @@ footer{
 }
 .title{
     display: flex;
+    font-size: 25px;
     justify-content: center;
 }
 
@@ -262,6 +292,7 @@ footer{
     margin-top: 1%;
     margin-right: 5%;
     margin-left: 5%;
+    font-size: 20px;
 }
 
 .question p{
@@ -288,7 +319,7 @@ footer{
     padding: 2.5%;
     width: auto;
     height: 100%;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 
@@ -301,7 +332,7 @@ footer{
     padding: 2.5%;
     transition: width 2.5s;
     height: 200px;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .mission:hover{
@@ -324,6 +355,7 @@ footer{
 }
 
 .background{
+    font-size: 25px;
     padding-left: 2.5%;
     padding-top: 5%;
 }
@@ -352,8 +384,6 @@ footer{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
-
 
 .person {
     position: relative;
@@ -392,3 +422,7 @@ footer{
     opacity: 1;
 }
 
+.name{
+    text-align: center;
+    font-size: 20px;
+}
