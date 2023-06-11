@@ -133,28 +133,36 @@ a:visited{
 }
 
 footer{
-    padding-top: 1%;
+    display: flex;
+    width: 100%;
     background-color: #D9D9D9;
-    font-size: 25px;
-    padding-bottom: 1%;
-}
-
-.foot{
-    text-align: center;
+    font-size: 20px;
+    line-height: 125%;
 }
 
 .er{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 10%;
+    padding-top: 2.5%;
+}
+
+.foot {
+    padding-left: 10%;
+    padding-bottom: -50%;
+    width: 100%;
+}
+
+.er img:hover{
+    transform: scale(125%);
+    transition: transform, 0.25s ease-in-out;
 }
 
 .news{
     display: flex;
     justify-content: center;
 }
-
-
 
 .sectionH{
     display: flex;
@@ -236,7 +244,7 @@ footer{
     position:relative;
     width: 50%;
     height: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .Cform input{
@@ -377,7 +385,7 @@ footer{
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -389,6 +397,7 @@ footer{
     position: relative;
 
 }
+
 
 .profile {
     opacity: 1;
@@ -403,7 +412,7 @@ footer{
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
@@ -411,7 +420,6 @@ footer{
     text-align: center;
     width: 100%;
     height: 50%;
-    
 }
 
 .person:hover .profile {
@@ -425,4 +433,11 @@ footer{
 .name{
     text-align: center;
     font-size: 20px;
+}
+
+.bio_text{
+    font-size: 16px;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: justify;
 }
