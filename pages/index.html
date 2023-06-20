@@ -1,146 +1,211 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="utf-8" />
-        <title>Virtual Medical Missions</title>
-        <link rel="icon" type="image/x-icon" href="media/logos/logo.png">
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Virtual Medical Missions</title>
+    <link rel="icon" type="image/x-icon" href="media/logos/logo.png" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer src="scroll.js"></script>
+  </head>
 
+  <body>
+    <div class="head">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="media/logos/logo.png" width="300px" height="170px"
+        /></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li>
+            <a
+              href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC"
+              target="_blank"
+              >Donate</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
 
-    <body>
+    <div class="sectionH">
+      <div class="section1">
+        <h1 class="hidden">Show Support to our Cause</h1>
+        <br />
+        <h2 class="hidden">A Legacy of Healing</h2>
+        <h2>All donations in the United States are tax deductible</h2>
+        <a
+          href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC"
+          target="_blank"
+          class="hidden"
+          ><button>Donate</button></a
+        >
+      </div>
+      <img src="media\backdrop.png" />
+    </div>
 
-        <div class="head">
-            <div class="logo">
-                <a href="index.html"><img src="media/logos/logo.png" width="300px" height="170px" /></a>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li class="current"><a href = "index.html">Home</a></li>
-                    <li><a href = "about.html">About</a></li>
-                    <li><a href = "team.html">Team</a></li>
-                    <li><a href = "faqs.html">FAQs</a></li>
-                    <li><a href = "https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC" target="_blank">Donate</a></li>
-                </ul>
-            </div>
-        </div>
+    <div class="About">
+      <img src="/pages/media/about.jpg" />
+      <div class="sectionA">
+        <h1 class="hidden">About</h1>
+        <p class="hidden">
+          The Virtual Medicine Mission (VMM) Healthcare program is a non-profit
+          organization dedicated to improving healthcare access in underserved
+          communities through the innovative use of telemedicine. Our mission is
+          to bridge the gap between healthcare providers and patients by
+          leveraging technology to deliver high-quality medical services
+          remotely. We connect medical professionals and technology with
+          patients in remote or underserved areas, providing consultations,
+          diagnosis, and treatment options. Our dedicated team of healthcare
+          providers is passionate about delivering compassionate care and making
+          a positive impact on individuals and communities. We believe that
+          together, we can make a difference in the healthcare systems of
+          underserved communities, starting with Godo, Kenya.
+        </p>
+      </div>
+    </div>
 
-        <div class = "sectionH">
-            <div class = "section1">
-                <h1>Learn About Our Mission</h1> <br>
-                <h2>A Legacy of Healing</h2>
-                <form action="http://localhost/beta_site/demo.php" target="_blank">
-                    <button type ="submit">Try demo</button>
-                </form>
-            </div>
-            <img src = "media\backdrop.png"/>
-        </div>
+    <div class="news">
+      <h1 class="hidden">We are creating a <em>legacy of healing</em></h1>
+    </div>
 
-        <div class="About">
-            <img src = "/pages/media/about.jpg"/>
-            <div class = "sectionA">
-                <h1>About</h1>
-                <p>The Virtual Medicine Mission (VMM) Healthcare program is a non-profit organization dedicated to improving healthcare access in underserved communities through the innovative use of telemedicine. Our mission is to bridge the gap between healthcare providers and patients by leveraging technology to deliver high-quality medical services remotely. We connect medical professionals and technology with patients in remote or underserved areas, providing consultations, diagnosis, and treatment options. Our dedicated team of healthcare providers is passionate about delivering compassionate care and making a positive impact on individuals and communities. We believe that together, we can make a difference in the healthcare systems of underserved communities, starting with Godo, Kenya.</p>
-            </div>
-        </div>
+    <div class="features">
+      <h2 class="hidden">VMM News and Features</h2>
+      <div class="videos hidden">
+        <figure>
+          <video class="vid" width="50%" controls loop>
+            <source
+              src="/pages/media/Video/telemed_update.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>5/28 Meeting Update</figcaption>
+        </figure>
+        <figure>
+          <video class="vid1" width="75%" controls loop>
+            <source src="/pages/media/Video/605_meeting.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>6/05 Meeting Update</figcaption>
+        </figure>
+      </div>
+    </div>
+    <script>
+      let clip = document.querySelector(".vid");
+      let clip1 = document.querySelector(".vid1");
+      //let clip2 = document.querySelector(".vid2")
+      //let clip3 = document.querySelector(".vid3")
 
-        <div class="news">
-            <h1>We are creating a <em>legacy of healing</em></h1>
-        </div>
-        
-        <div class="features">
-            <h2>VMM News and Features</h2>
-            <div class="videos">
-                <figure>
-                    <video class="vid" width="50%" controls loop>
-                        <source src="/pages/media/Video/telemed_update.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <figcaption>5/28 Meeting Update</figcaption>
-                </figure>
-                <figure>
-                    <video class="vid1" width="75%" controls loop>
-                        <source src="/pages/media/Video/605_meeting.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <figcaption>6/05 Meeting Update</figcaption>
-                </figure>
-                
-            </div>
-        </div>
-        <script>
-            let clip = document.querySelector(".vid")
-            let clip1 = document.querySelector(".vid1")
-            //let clip2 = document.querySelector(".vid2")
-            //let clip3 = document.querySelector(".vid3")
+      clip.addEventListener("mouseover", function (e) {
+        clip.play();
+      });
+      clip1.addEventListener("mouseover", function (e) {
+        clip1.play();
+      });
+      clip2.addEventListener("mouseover", function (e) {
+        clip2.play();
+      });
+      clip3.addEventListener("mouseover", function (e) {
+        clip3.play();
+      });
 
-            clip.addEventListener("mouseover", function (e) {
-                clip.play();
-            })
-            clip1.addEventListener("mouseover", function (e) {
-                clip1.play();
-            })
-            clip2.addEventListener("mouseover", function (e) {
-                clip2.play();
-            })
-            clip3.addEventListener("mouseover", function (e) {
-                clip3.play();
-            })
-
-            /* Applying mouseout event on video clip 
+      /* Applying mouseout event on video clip 
             and then we call pause() function to stop 
             the video when the mouse is out the video */
-            clip.addEventListener("mouseout", function (e) {
-                clip.pause();
-            })
-            clip1.addEventListener("mouseout", function (e) {
-                clip1.pause();
-            })
-            clip2.addEventListener("mouseout", function (e) {
-                clip2.pause();
-            })
-            clip3.addEventListener("mouseout", function (e) {
-                clip3.pause();
-            })
-        </script>
-        
-        <div class="contact_form">
-            <h1>Contact Us</h1>
-        </div>
-        <div class="contact_form">
-            <img src="/pages/media/contact.png"/>
-            <form class = "Cform" action="https://formcarry.com/s/xhdtQ8usvv" method="POST" accept-charset="UTF-8">
-                <div class="fromq">
-                    <label for = "name"> Name:</label><br>
-                    <input type = "text" id = "name" name = "name"><br>
-                </div>
-                <div class="fromq">
-                    <label for = "email"> Email:</label><br>
-                    <input type = "email" id = "email" name = "email"><br>
-                </div>
-                <div class="fromq">
-                    <label for = "messsage"> Message:</label><br>
-                    <textarea id = "message" rows="5" cols="60" name="message"></textarea><br>
-                </div>
+      clip.addEventListener("mouseout", function (e) {
+        clip.pause();
+      });
+      clip1.addEventListener("mouseout", function (e) {
+        clip1.pause();
+      });
+      /*clip2.addEventListener("mouseout", function (e) {
+        clip2.pause();
+      });
+      clip3.addEventListener("mouseout", function (e) {
+        clip3.pause();
+      });*/
+    </script>
+    <div
+      class="embedsocial-hashtag"
+      data-ref="7f9a44d1c8c640d1fdcf60fcface0a4ff3b66669"
+    >
+      <a
+        class="feed-powered-by-es feed-powered-by-es-feed-new"
+        href="https://embedsocial.com/social-media-aggregator/"
+        target="_blank"
+        title="Widget by EmbedSocial"
+      >
+        Widget by EmbedSocial<span>→</span>
+      </a>
+    </div>
+    <script>
+      (function (d, s, id) {
+        var js;
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://embedsocial.com/cdn/ht.js";
+        d.getElementsByTagName("head")[0].appendChild(js);
+      })(document, "script", "EmbedSocialHashtagScript");
+    </script>
 
-                <div class = "submit">
-                    <button type = "submit" id = "submitbtn"> Submit </button>
-                </div>
-            </form>
+    <div class="contact_form">
+      <h1 class="hidden">Contact Us</h1>
+    </div>
+    <div class="contact_form hidden">
+      <img src="/pages/media/contact.png" />
+      <form
+        class="Cform"
+        action="/pages/backend/form-to-email.php"
+        method="POST"
+        accept-charset="UTF-8"
+      >
+        <div class="fromq">
+          <label for="name"> Name:</label><br />
+          <input type="text" id="name" name="name" /><br />
+        </div>
+        <div class="fromq">
+          <label for="email"> Email:</label><br />
+          <input type="email" id="email" name="email" /><br />
+        </div>
+        <div class="fromq">
+          <label for="messsage"> Message:</label><br />
+          <textarea id="message" rows="5" cols="60" name="message"></textarea
+          ><br />
         </div>
 
-    </body>
+        <div class="submit">
+          <button type="submit" id="submitbtn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
 
-    <footer>
-        <div class="foot">
-            <b><p>VMM is a registered 501(c)(3) nonprofit organization</p></b>
-            <b><p>All donations in the United States are tax deductible.</p></b>
-            <p>©2023 Virtual Medical Missions. All Rights Reserved</p>
-        </div>
-        <div class="er">
-            <a href="https://instagram.com/vmmhealth?igshid=ZWQyN2ExYTkwZQ==" target="_blank"><img src="/pages/media/logos/insta_logo.png" width="75%"/></a>
-            <a href="https://www.linkedin.com/company/virtual-medical-missions/" target="_blank"><img src="/pages/media/logos/linkedin_logo.png"  width="75%"/></a>
-        </div>
-    </footer>
+  <footer>
+    <div class="foot">
+      <b><p>VMM is a registered 501(c)(3) nonprofit organization</p></b>
+      <b><p>All donations in the United States are tax deductible.</p></b>
+      <p>©2023 Virtual Medical Missions. All Rights Reserved</p>
+    </div>
+    <div class="er">
+      <a
+        href="https://instagram.com/vmmhealth?igshid=ZWQyN2ExYTkwZQ=="
+        target="_blank"
+        ><img src="/pages/media/logos/insta_logo.png" width="75%"
+      /></a>
+      <a
+        href="https://www.linkedin.com/company/virtual-medical-missions/"
+        target="_blank"
+        ><img src="/pages/media/logos/linkedin_logo.png" width="75%"
+      /></a>
+    </div>
+  </footer>
 </html>
