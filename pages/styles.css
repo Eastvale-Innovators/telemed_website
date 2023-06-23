@@ -11,16 +11,10 @@
     width: 100%;
   }
 }
-/*
-.hidden {
-  opacity: 0;
-  transition: all 1s;
-}
 
-.show {
-  opacity: 1;
+body {
+  background-color: #fefbf1;
 }
-*/
 .head {
   display: flex;
 }
@@ -145,6 +139,7 @@ footer {
   background-color: #d9d9d9;
   font-size: 20px;
   line-height: 125%;
+  margin-top: 2.5%;
 }
 
 .er {
@@ -305,23 +300,15 @@ footer {
 }
 
 .questions {
-  columns: 2 auto;
-  margin-top: 1%;
   margin-right: 5%;
   margin-left: 5%;
   font-size: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .question p {
   font-weight: bold;
-  animation: appear 3s;
-  animation-fill-mode: forwards;
-}
-
-.answer {
-  opacity: 0;
-  animation: appear 3s;
-  animation-fill-mode: forwards;
 }
 
 .banner {
@@ -337,6 +324,7 @@ footer {
   align-items: center;
   justify-content: center;
   height: 200px;
+  margin-bottom: 3.75%;
 }
 
 .vision {
@@ -344,41 +332,54 @@ footer {
   padding: 2.5%;
   width: auto;
   height: 100%;
-  font-size: 20px;
+  font-size: 25px;
+  padding-bottom: 5%;
 }
-
 .mission {
   color: transparent;
   background-color: #ec1b24;
   width: 20%;
   height: 50%;
   padding: 2.5%;
-  transition: width 2.5s;
+  transition: width 1s;
   height: 200px;
-  font-size: 20px;
+  font-size: 25px;
+  padding-bottom: 5%;
 }
 
 .mission:hover {
   width: 100%;
   padding: 2.5%;
   color: white;
+  padding-bottom: 5%;
 }
 
 .sectionB {
+  padding-top: 5%;
   display: flex;
   font-size: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .sectionB img {
   display: flex;
-  width: 50%;
+  width: 35%;
+}
+
+.top {
   padding-top: 2.5%;
 }
 
 .background {
   font-size: 25px;
   padding-left: 2.5%;
-  padding-top: 5%;
+  text-align: justify;
+  padding-right: 2.5%;
+}
+
+.stemIMG {
+  padding-left: 5%;
 }
 
 .contact_form {
