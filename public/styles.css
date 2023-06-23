@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Nunito";
-  src: url(public/Nunito-Regular.ttf);
+  src: url(/public/Nunito-Regular.ttf);
 }
 
 @keyframes divAnim {
