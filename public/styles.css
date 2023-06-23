@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Nunito";
+  src: url(/public/Nunito-Regular.ttf);
+}
 
 @keyframes divAnim {
   0% {
@@ -18,7 +22,7 @@ body {
 
 body {
   margin: 0px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito";
 }
 
 .menu {
