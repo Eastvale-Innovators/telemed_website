@@ -1,7 +1,19 @@
 
-.vs/
+public/.vs/
+public/.firebase/
+
 
 .idea/
 
 
+public/node_modules
 
+firebase.json
+
+firebase-debug.log
+
+public/package-lock.json
+
+.firebaserc
+
+public/package.json
