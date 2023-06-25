@@ -155,8 +155,9 @@ footer {
 
 @media screen and (min-width: 900px) {
   footer {
-    padding-bottom: 5%;
+    padding-bottom: 7.5%;
   }
+
   .foot {
     font-size: 25px;
   }
