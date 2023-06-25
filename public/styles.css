@@ -60,17 +60,6 @@ a:visited {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.current a {
-  text-decoration: underline;
-  text-underline-offset: 50%;
-}
-
-.logo {
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  margin-top: 1%;
-}
-
 .menu li {
   display: inline;
   list-style-type: none;
@@ -81,6 +70,25 @@ a:visited {
 
 .menu ul {
   display: flex;
+}
+
+@media screen and (min-width: 900px) {
+  .menu {
+    width: 100%;
+  }
+  .menu a {
+    padding: 5px;
+  }
+}
+.current a {
+  text-decoration: underline;
+  text-underline-offset: 50%;
+}
+
+.logo {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: 1%;
 }
 
 .contact {
@@ -143,6 +151,15 @@ footer {
   width: 100%;
   padding-right: 10%;
   padding-top: 2.5%;
+}
+
+@media screen and (min-width: 900px) {
+  .er img {
+    width: 200%;
+  }
+  .er a {
+    padding-right: 25%;
+  }
 }
 
 .foot {
@@ -247,6 +264,22 @@ footer {
   padding-bottom: 5%;
 }
 
+@media screen and (min-width: 900px) {
+  .new_contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_form {
+    font-size: 40px;
+  }
+
+  .Cform input {
+    width: 200%;
+    padding: 24px 40px;
+    font-size: 20px;
+  }
+}
+
 .Cform input {
   width: 100%;
   padding: 12px 20px;
@@ -306,6 +339,19 @@ footer {
   font-weight: bold;
 }
 
+@media screen and (min-width: 900px) {
+  .questions {
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 2%;
+  }
+
+  .current {
+    font-size: 10px;
+
+    padding: 2%;
+  }
+}
 .banner {
   display: flex;
 }
@@ -348,6 +394,44 @@ footer {
   color: white;
   padding-bottom: 5%;
 }
+@media screen and (min-width: 900px) {
+  .VM {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    margin-bottom: 3.75%;
+    margin-top: 10%;
+  }
+
+  .vision {
+    background-color: #f2ab26;
+    padding: 2.5%;
+    width: auto;
+    height: 175%;
+    font-size: 30px;
+    padding-bottom: 5%;
+  }
+  .mission {
+    color: transparent;
+    background-color: #ec1b24;
+    width: 20%;
+    height: 100%;
+    padding: 2.5%;
+    transition: width 1s;
+    height: 175%;
+    font-size: 30px;
+    padding-bottom: 5%;
+  }
+
+  .mission:hover {
+    width: 150%;
+    padding: 2.5%;
+    color: white;
+    padding-bottom: 5%;
+  }
+}
 
 .sectionB {
   padding-top: 5%;
@@ -377,6 +461,17 @@ footer {
   padding-left: 5%;
 }
 
+@media screen and (min-width: 900px) {
+  .sectionB {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px !important;
+  }
+
+  .sectionB img {
+    width: 100%;
+  }
+}
 .contact_form {
   display: flex;
   height: 100%;
