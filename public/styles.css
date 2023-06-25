@@ -154,6 +154,13 @@ footer {
 }
 
 @media screen and (min-width: 900px) {
+  footer {
+    padding-bottom: 7.5%;
+  }
+
+  .foot {
+    font-size: 25px;
+  }
   .er img {
     width: 200%;
   }
