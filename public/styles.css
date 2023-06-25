@@ -72,25 +72,6 @@ a:visited {
   display: flex;
 }
 
-@media screen and (min-width: 900px) {
-  .menu {
-    width: 100%;
-  }
-  .menu a {
-    padding: 5px;
-  }
-}
-.current a {
-  text-decoration: underline;
-  text-underline-offset: 50%;
-}
-
-.logo {
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  margin-top: 1%;
-}
-
 .contact {
   background-color: #05445e;
   display: flex;
@@ -142,7 +123,6 @@ footer {
   background-color: #d9d9d9;
   font-size: 20px;
   line-height: 125%;
-  margin-top: 2.5%;
 }
 
 .er {
@@ -153,7 +133,23 @@ footer {
   padding-top: 2.5%;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
+  footer {
+    padding-bottom: 7.5%;
+  }
+
+  .foot {
+    font-size: 25px;
+  }
+  .er img {
+    width: 200%;
+  }
+  .er a {
+    padding-right: 25%;
+  }
+}
+
+@media (max-width: 900px) {
   footer {
     padding-bottom: 7.5%;
   }
@@ -271,22 +267,6 @@ footer {
   padding-bottom: 5%;
 }
 
-@media screen and (max-width: 900px) {
-  .new_contact {
-    display: flex;
-    flex-direction: column;
-  }
-  .contact_form {
-    font-size: 40px;
-  }
-
-  .Cform input {
-    width: 200%;
-    padding: 24px 40px;
-    font-size: 20px;
-  }
-}
-
 .Cform input {
   width: 100%;
   padding: 12px 20px;
@@ -346,18 +326,6 @@ footer {
   font-weight: bold;
 }
 
-@media screen, (min-width: 800) and (max-width: 900px) {
-  .questions {
-    margin-right: 5%;
-    margin-left: 5%;
-  }
-
-  .current {
-    font-size: 20px;
-
-    padding: 2%;
-  }
-}
 .banner {
   display: flex;
 }
@@ -398,6 +366,44 @@ footer {
   padding: 2.5%;
   color: white;
   padding-bottom: 5%;
+}
+@media (max-width: 900px) {
+  .VM {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    margin-bottom: 3.75%;
+    margin-top: 10%;
+  }
+
+  .vision {
+    background-color: #f2ab26;
+    padding: 2.5%;
+    width: auto;
+    height: 175%;
+    font-size: 10px;
+    padding-bottom: 5%;
+  }
+  .mission {
+    color: transparent;
+    background-color: #ec1b24;
+    width: 20%;
+    height: 100%;
+    padding: 2.5%;
+    transition: width 1s;
+    height: 175%;
+    font-size: 30px;
+    padding-bottom: 5%;
+  }
+
+  .mission:hover {
+    width: 150%;
+    padding: 2.5%;
+    color: white;
+    padding-bottom: 5%;
+  }
 }
 
 .sectionB {
