@@ -29,7 +29,7 @@ body {
 .menu a {
   color: white;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   display: inline-block;
   position: relative;
 }
@@ -454,6 +454,16 @@ footer {
 }
 
 @media (max-width: 800px) {
+  .menu {
+    width: 125%;
+  }
+
+  .head {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .sectionH {
     display: flex;
     flex-direction: column-reverse;
@@ -500,5 +510,13 @@ footer {
 
   .er {
     justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .team_r {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 }
