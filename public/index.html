@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css" />
     <link rel="stylesheet" href="assets/css/accordion-faq-list.css" />
     <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css" />
+    <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css">
+    <link rel="stylesheet" href="assets/css/Beautiful-Contact-from-animated.css">
     <link
       rel="stylesheet"
       href="assets/css/Footer-with-social-media-icons.css"
@@ -30,6 +32,114 @@
       href="assets/img/logo_bg.png"
       type="image/x-icon"
     />
+    <style>
+      .donate-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: calc(75vh - 75px);
+        background: floralwhite;
+        color: #f4f6f7;
+        position: relative;
+        z-index: 1;
+        padding-bottom: 10px;
+      }
+
+      .donate-section img {
+        width: 45%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 1;
+        margin-left: -20%;
+      }
+      .donate-section .box {
+        z-index: 9999;
+        background:  #ff1a1a;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 4vw;
+        border-radius: 4vw;
+        width: 37%;
+        max-width: 77%;
+        height: auto;
+        max-height: 55%;
+        position: absolute;
+        margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(25%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .donate-section .box h2 {
+        font-size: 1.6vw;
+        margin-top: 1vw;
+        font-weight: 400;
+      }
+
+      .donate-section .box p {
+        opacity: 0.9;
+        font-weight: 100;
+        margin-top: 0.5vw;
+        flex-grow: 1;
+        font-size: 1.15vw;
+      }
+
+      .donate-section .box a.btn {
+        font-size: 1.1vw;
+        padding: 0.2vw 0.25vw;
+      }
+
+      @media (max-width: 768px) {
+        .donate-section {
+          flex-direction: column;
+          text-align: center;
+          padding: 0;
+        }
+
+        .donate-section img {
+          width: 100%;
+          margin-left: 0;
+          margin-bottom: 4vw;
+        }
+
+        .donate-section .box {
+          margin: 0 auto;
+          position: static;
+          width: 90%;
+          padding: 4vw;
+          border-radius: 4vw;
+          height: auto;
+          top: 0;
+          left: 0;
+          transform: none;
+        }
+
+        .donate-section .box h2 {
+          font-size: 4vw;
+          margin-top: 2vw;
+        }
+
+        .donate-section .box p {
+          margin-top: 3vw;
+          font-size: 3vw;
+        }
+
+        .donate-section .box a.btn {
+          font-size: 2.5vw;
+          padding: 1vw 2vw;
+        }
+      }
+
+      .navbar-logo {
+        width: 168px;
+        height: 96px;
+        border-radius: 0;
+      }
+    </style>
   </head>
 
   <body>
@@ -39,7 +149,7 @@
     >
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#"></a
-        ><img src="assets/img/logo_tr.png" width="168" height="96" /><button
+        ><img class="navbar-logo" src="assets/img/logo_tr.png" width="168" height="96" alt="logo" /><button
           data-bs-toggle="collapse"
           class="navbar-toggler text-light"
           data-bs-target="#navcol-2"
@@ -70,7 +180,7 @@
                   font-size: 26px;
                   color: #ffffff;
                   margin-right: 1px;
-                  margin-left: 0px;
+                  margin-left: 0;
                 "
                 >About</a
               >
@@ -115,49 +225,17 @@
         </div>
       </div>
     </nav>
-    <section class="py-4 py-xl-5">
-      <div class="container">
-        <div
-          class="bg-dark border rounded border-0 border-dark overflow-hidden"
-        >
-          <div class="row g-0">
-            <div class="col-md-6">
-              <div class="text-white p-4 p-md-5" style="background: #ec1b24">
-                <h2 class="fw-bold text-white mb-3">
-                  Show Support to Our Cause
-                </h2>
-                <p class="mb-4">A Legacy of Healing</p>
-                <p>All donations in the United States are tax deductible</p>
-                <div class="my-3">
-                  <a
-                    class="btn btn-primary btn-lg me-2"
-                    role="button"
-                    href="#"
-                    style="
-                      background: var(--bs-btn-disabled-color);
-                      color: rgb(0, 0, 0);
-                    "
-                    >Donate</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-md-6 order-first order-md-last"
-              style="min-height: 250px"
-            >
-              <img
-                class="w-100 h-100 fit-cover"
-                src="assets/img/backdrop.png"
-                width="468"
-                height="344"
-                style="padding-right: 0px"
-              />
-            </div>
-          </div>
-        </div>
+
+    <div class="donate-section" style="padding-bottom: 10px;">
+      <img src="assets/img/backdrop.png" alt="donate">
+
+      <div class="box">
+        <h2>Show Support To Our Cause</h2>
+        <p class="fw-bold text-light">A Legacy Of Healing<br><i>All donations in the United States are tax-deductible</i></p>
+        <a class="btn btn-light btn-lg me-2 btn-lg" role="button" href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC">Donate</a>
       </div>
-    </section>
+    </div>
+
     <div class="container py-4 py-xl-5">
       <h1 class="display-6 fw-bold text-center">ABOUT</h1>
       <div class="row gy-4 gy-md-0 text-center">
@@ -165,10 +243,11 @@
           <div class="p-xl-5 m-xl-5">
             <img
               class="rounded img-fluid w-100 fit-cover"
-              style="min-height: 300px; padding-top: 0px"
+              style="min-height: 300px; padding-top: 0"
               src="assets/img/about.jpg"
               width="456"
               height="342"
+              alt="about image"
             />
           </div>
         </div>
@@ -219,63 +298,18 @@
         d.getElementsByTagName("head")[0].appendChild(js);
       })(document, "script", "EmbedSocialHashtagScript");
     </script>
-    <section class="position-relative py-4 py-xl-5">
-      <div class="container position-relative">
-        <div class="row mb-5">
-          <div class="col-md-8 col-xl-6 text-center mx-auto">
-            <h2>Contact us</h2>
-          </div>
-        </div>
-        <div class="row d-flex justify-content-center">
-          <div class="col-11 col-sm-7 col-md-6 col-lg-4 col-xl-4">
-            <img
-              src="assets/img/contact.png"
-              width="306"
-              height="350"
-              style="padding-left: 0px; padding-right: 0px"
-            />
-          </div>
-          <div class="col-md-6 col-lg-5 col-xl-4">
-            <div>
-              <form class="p-3 p-xl-4" method="post">
-                <div class="mb-3">
-                  <input
-                    class="form-control"
-                    type="text"
-                    id="name-1"
-                    name="name"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    class="form-control"
-                    type="email"
-                    id="email-1"
-                    name="email"
-                    placeholder="Email"
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="message-1"
-                    name="message"
-                    rows="6"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-                <div>
-                  <button class="btn btn-primary d-block w-100" type="submit">
-                    Send
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
+
+    <div class="container container-contact100" style="background-color: floralwhite">
+      <div class="wrap-contact100">
+        <form class="contact100-form validate-form" action="https://formcarry.com/s/NWKMOkCFIN" method="post"><span class="contact100-form-title">Contact Us</span>
+          <div class="wrap-input100 validate-input" data-validate="Please enter your name"><input class="form-control input100" type="text" name="name" placeholder="Full Name" /><span class="focus-input100"></span></div>
+          <div class="wrap-input100 validate-input" data-validate="Please enter your email: e@a.x"><input class="form-control input100" type="text" name="email" placeholder="E-mail" /><span class="focus-input100"></span></div>
+          <div class="wrap-input100 validate-input" data-validate="Please enter your message"><textarea class="form-control input100" name="message" placeholder="Your Message"></textarea><span class="focus-input100"></span></div>
+          <div class="container-contact100-form-btn"><button class="btn btn-primary contact100-form-btn" type="submit"><span>Send <i class="fa fa-star fa fa-paper-plane-o m-r-6" aria-hidden="true"></i></span></button></div>
+        </form>
       </div>
-    </section>
+    </div>
+
     <footer id="footerpad">
       <div class="container">
         <div class="row">
@@ -318,7 +352,7 @@
             </p>
             <p style="text-align: center">
               <span style="color: rgb(254, 251, 241)"
-                >All donations in the United States are tax deductible.</span
+                >All donations in the United States are tax-deductible.</span
               >
             </p>
           </div>
