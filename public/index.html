@@ -139,6 +139,58 @@
         height: 96px;
         border-radius: 0;
       }
+
+      .navbar-nav .nav-item .nav-link {
+        position: relative;
+        color: white;
+      }
+
+      .navbar-nav .nav-item .nav-link::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .navbar-nav .nav-item .nav-link:hover::before {
+        transform: scaleX(1);
+      }
+      .custom-toggler .navbar-toggler-icon {
+        filter: brightness(1) invert(1);
+      }
+      .navbar-nav .nav-item .nav-link.active {
+        position: relative;
+      }
+
+      .navbar-nav .nav-item .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+      }
+
+      @media (max-width: 767px) {
+        .navbar-nav {
+          text-align: center;
+        }
+
+        .navbar-nav .nav-item {
+          display: inline-block;
+          margin: 5px;
+        }
+        .navbar .btn {
+          display: block;
+          margin: 10px auto;
+        }
+      }
     </style>
   </head>
 
@@ -160,59 +212,24 @@
         <div class="collapse navbar-collapse" id="navcol-2">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item fs-2">
-              <a
-                class="nav-link active fs-2"
-                href="index.html"
-                style="
-                  font-size: 26px;
-                  color: #ffffff;
-                  margin-right: 5px;
-                  margin-left: 3px;
-                "
-                >Home</a
-              >
+              <a class="nav-link active fs-2" href="index.html">
+                Home
+              </a>
             </li>
             <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
-              <a
-                class="nav-link fs-2"
-                href="about.html"
-                style="
-                  font-size: 26px;
-                  color: #ffffff;
-                  margin-right: 1px;
-                  margin-left: 0;
-                "
-                >About</a
-              >
+              <a class="nav-link fs-2" href="about.html">
+                About
+              </a>
             </li>
-            <li
-              class="nav-item fs-2"
-              style="font-size: 26px; color: #ffffff; margin-right: -10px"
-            >
-              <a
-                class="nav-link fs-2"
-                href="team.html"
-                style="
-                  font-size: 26px;
-                  margin-right: 10px;
-                  color: #ffffff;
-                  margin-left: 5px;
-                "
-                >Team</a
-              >
+            <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff;">
+              <a class="nav-link fs-2" href="team.html">
+                Team
+              </a>
             </li>
             <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
-              <a
-                class="nav-link active fs-2"
-                href="faqs.html"
-                style="
-                  font-size: 26px;
-                  color: #ffffff;
-                  margin-right: 5px;
-                  margin-left: 5px;
-                "
-                >FAQs</a
-              >
+              <a class="nav-link fs-2" href="faqs.html">
+                FAQs
+              </a>
             </li>
           </ul>
           <a

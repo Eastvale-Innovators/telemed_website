@@ -171,6 +171,58 @@
         height: 96px;
         border-radius: 0;
       }
+
+      .navbar-nav .nav-item .nav-link {
+        position: relative;
+        color: white;
+      }
+
+      .navbar-nav .nav-item .nav-link::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .navbar-nav .nav-item .nav-link:hover::before {
+        transform: scaleX(1);
+      }
+      .custom-toggler .navbar-toggler-icon {
+        filter: brightness(1) invert(1);
+      }
+      .navbar-nav .nav-item .nav-link.active {
+        position: relative;
+      }
+
+      .navbar-nav .nav-item .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+      }
+
+      @media (max-width: 767px) {
+        .navbar-nav {
+          text-align: center;
+        }
+
+        .navbar-nav .nav-item {
+          display: inline-block;
+          margin: 5px;
+        }
+        .navbar .btn {
+          display: block;
+          margin: 10px auto;
+        }
+      }
     </style>
   </head>
 
@@ -189,74 +241,39 @@
           <span class="visually-hidden">Toggle navigation</span
           ><span class="navbar-toggler-icon text-light text-opacity-75"></span>
     </button>
-        <div class="collapse navbar-collapse" id="navcol-2">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item fs-2">
-              <a
-                class="nav-link active fs-2"
-                href="index.html"
-                style="
-                  font-size: 26px;
-                  color: #ffffff;
-                  margin-right: 5px;
-                  margin-left: 3px;
-                "
-                >Home</a
-              >
-            </li>
-            <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
-              <a
-                class="nav-link fs-2"
-                href="about.html"
-                style="
-                  font-size: 26px;
-                  color: #ffffff;
-                  margin-right: 1px;
-                  margin-left: 0;
-                "
-                >About</a
-              >
-            </li>
-            <li
-              class="nav-item fs-2"
-              style="font-size: 26px; color: #ffffff; margin-right: -10px"
-            >
-              <a
-                class="nav-link fs-2"
-                href="team.html"
-                style="
-                  font-size: 26px;
-                  margin-right: 10px;
-                  color: #ffffff;
-                  margin-left: 5px;
-                "
-                >Team</a
-              >
-            </li>
-            <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
-              <a
-                class="nav-link active fs-2"
-                href="faqs.html"
-                style="
-                  font-size: 26px;
-                  color: #ffffff;
-                  margin-right: 5px;
-                  margin-left: 5px;
-                "
-                >FAQs</a
-              >
-            </li>
-          </ul>
-          <a
-            class="btn btn-primary fs-2 ms-md-2"
-            role="button"
-            href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC"
-            target="_blank"
-            >Donate</a
-          >
-        </div>
+      <div class="collapse navbar-collapse" id="navcol-2">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item fs-2">
+            <a class="nav-link fs-2" href="index.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
+            <a class="nav-link fs-2" href="about.html">
+              About
+            </a>
+          </li>
+          <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff;">
+            <a class="nav-link active fs-2" href="team.html">
+              Team
+            </a>
+          </li>
+          <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
+            <a class="nav-link fs-2" href="faqs.html">
+              FAQs
+            </a>
+          </li>
+        </ul>
+        <a
+                class="btn btn-primary fs-2 ms-md-2"
+                role="button"
+                href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC"
+                target="_blank"
+        >Donate</a
+        >
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <div class="team-banner-section" style="padding-bottom: 10px;">
       <img src="assets/img/team_banner.png" alt="team">
@@ -397,13 +414,13 @@
     <script>
       let teamDirectors = [
         {
-          profile: "assets/img/students/nihal.jpg",
+          profile: "assets/img/team/students/nihal.jpg",
           name: "Nihal Sekhon",
           status: "Director of Engineering",
           about: "Nihal Sekhon is a freshman at the University of Michigan where he is pursuing a degree in aerospace engineering. He has half a decade of experience developing and testing electronic hardware and is primarily responsible for the development of the device including the software, associated circuitry, and user interface. Nihal became involved in this project in order to use his skill set to provide life-saving care to people across the world."
         },
         {
-          profile: "assets/img/students/nataniel.png",
+          profile: "assets/img/team/students/nataniel.png",
           name: "Nataniel Jayaseelan",
           status: "Director of Computer Science (CS)",
           about: "Nataniel Jayaseelan is an upcoming student at UC Santa Cruz dedicated and driven computer science intern at Virtual Medical Missions. With a passion for using technology for social impact, Nataniel takes pride in being a part of a team that aims to provide medical services to underserved communities. As the lead intern, Nataniel is responsible for developing innovative software solutions that optimize healthcare processes. With a strong background in computer science and a commitment to making a difference, Nataniel is actively contributing to the organization's mission of ensuring accessible and quality healthcare for all."
@@ -450,25 +467,25 @@
     <script>
       let leadInterns = [
         {
-          profile: "assets/img/students/nil.jpg",
+          profile: "assets/img/team/students/nil.jpg",
           name: "Nil Patel",
           status: "Lead Engineering Intern - Class of 2024",
           about: "Nil Patel is a student at Eleanor Roosevelt High School and the eSTEM Academy in the class of 2024. His knowledge gained by being a part of both the computer science and medical pathway provides the perfect background to be an integral element of the VMM Team. Along with involvement in STEM classes, he has extensive experience with digital marketing via video production providing quality content for VMM. As part of being a lead intern, he closely works with the mentors/advisors to ensure the engineering, computer science, medical and marketing teams are executing their goals. Nil is truly excited to be able to implement his skills to help VMM reach its goal."
         },
         {
-          profile: "assets/img/students/ayush.png",
+          profile: "assets/img/team/students/ayush.png",
           name: "Ayush Moghe",
           status: "Lead CS Intern - Class of 2025",
           about: "Ayush is a student at Eleanor Roosevelt High school, graduating with the class of 2025. He is also the founder and president of the ERHS Coding Club. Ayush has been programming for almost 5 years and specializes in backend designing and programming as well as algorithm development."
         },
         {
-          profile: "assets/img/students/prabhas.png",
+          profile: "assets/img/team/students/prabhas.png",
           name: "Prabhas Kolluri",
           status: "Lead Medical Intern - Class of 2024",
           about: "Eleanor Roosevelt High School student Prabhas Kolluri will soon graduate as a member of the Class of 2024. He has had a lifelong passion for medicine and he is thrilled about the chance to be a part of VMM’s medical team. As the team's lead intern, Prabhas has been assisting the group in conducting research, creating lists of the illnesses that our branching logics will eventually identify, digitalizing the branch logic’s to the internet, helping the mentors, and developing queries that will be incorporated into the routes. Prabhas is actively aiming to make a substantial influence on the communities that use telemedicine in the future, inspired by the project's potential and scope. He looks forward to a bright future in this project!"
         },
         {
-          profile: "assets/img/students/eileen.jpg",
+          profile: "assets/img/team/students/eileen.jpg",
           name: "Eileen Lin",
           status: "Lead Social Media Intern - Class of 2024",
           about: "Eileen is a rising senior at eSTEM Academy passionate about computer science and marketing. Her passion for UI/UX has been combined to further VMM’s mission to reach underdeveloped nations in an engaging and impactful manner. Her background in digital marketing and web development has been reflected in her role as social media & CS lead within VMM. Eileen see’s a future of equitable development and healthcare access combined with the technological innovations of tomorrow to improve today."

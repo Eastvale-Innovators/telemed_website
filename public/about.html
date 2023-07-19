@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>About - Virutal Medical Missions</title>
+    <title>About - Virtual Medical Missions</title>
     <meta
       name="description"
       content="About Virtual Medical Missions, A non-profit medical organization focused on bringing telemedicine services to underprivileged areas"
@@ -73,92 +73,107 @@
         height: 96px;
         border-radius: 0;
       }
+
+      .navbar-nav .nav-item .nav-link {
+        position: relative;
+        color: white;
+      }
+
+      .navbar-nav .nav-item .nav-link::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .navbar-nav .nav-item .nav-link:hover::before {
+        transform: scaleX(1);
+      }
+      .custom-toggler .navbar-toggler-icon {
+        filter: brightness(1) invert(1);
+      }
+      .navbar-nav .nav-item .nav-link.active {
+        position: relative;
+      }
+
+      .navbar-nav .nav-item .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+      }
+
+      @media (max-width: 767px) {
+        .navbar-nav {
+          text-align: center;
+        }
+
+        .navbar-nav .nav-item {
+          display: inline-block;
+          margin: 5px;
+        }
+        .navbar .btn {
+          display: block;
+          margin: 10px auto;
+        }
+      }
     </style>
   </head>
 
   <body>
-    <nav
-      class="navbar navbar-expand-md bg-body py-3"
-      style="background: linear-gradient(#05445e, #05445e), #05445e"
+  <nav
+          class="navbar navbar-expand-md bg-body py-3"
+          style="background: linear-gradient(#05445e, #05445e), #05445e"
+  >
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#"></a
+      ><img class="navbar-logo" src="assets/img/logo_tr.png" width="168" height="96" alt="logo" /><button
+            data-bs-toggle="collapse"
+            class="navbar-toggler text-light"
+            data-bs-target="#navcol-2"
     >
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#"></a
-        ><img class="navbar-logo" src="assets/img/logo_tr.png" width="168" height="96" alt="logo" /><button
-          data-bs-toggle="collapse"
-          class="navbar-toggler text-light"
-          data-bs-target="#navcol-2"
-        >
           <span class="visually-hidden">Toggle navigation</span
           ><span class="navbar-toggler-icon text-light text-opacity-75"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navcol-2">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item fs-2">
-              <a
-                class="nav-link active fs-2"
-                href="index.html"
-                style="
-                  font-size: 26px;
-                  color: #ffffff;
-                  margin-right: 5px;
-                  margin-left: 3px;
-                "
-                >Home</a
-              >
-            </li>
-            <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
-              <a
-                class="nav-link fs-2"
-                href="about.html"
-                style="
-                  font-size: 26px;
-                  color: #ffffff;
-                  margin-right: 1px;
-                  margin-left: 0;
-                "
-                >About</a
-              >
-            </li>
-            <li
-              class="nav-item fs-2"
-              style="font-size: 26px; color: #ffffff; margin-right: -10px"
-            >
-              <a
-                class="nav-link fs-2"
-                href="team.html"
-                style="
-                  font-size: 26px;
-                  margin-right: 10px;
-                  color: #ffffff;
-                  margin-left: 5px;
-                "
-                >Team</a
-              >
-            </li>
-            <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
-              <a
-                class="nav-link active fs-2"
-                href="faqs.html"
-                style="
-                  font-size: 26px;
-                  color: #ffffff;
-                  margin-right: 5px;
-                  margin-left: 5px;
-                "
-                >FAQs</a
-              >
-            </li>
-          </ul>
-          <a
-            class="btn btn-primary fs-2 ms-md-2"
-            role="button"
-            href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC"
-            target="_blank"
-            >Donate</a
-          >
-        </div>
+    </button>
+      <div class="collapse navbar-collapse" id="navcol-2">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item fs-2">
+            <a class="nav-link fs-2" href="index.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
+            <a class="nav-link active fs-2" href="about.html">
+              About
+            </a>
+          </li>
+          <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff;">
+            <a class="nav-link fs-2" href="team.html">
+              Team
+            </a>
+          </li>
+          <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
+            <a class="nav-link fs-2" href="faqs.html">
+              FAQs
+            </a>
+          </li>
+        </ul>
+        <a class="btn btn-primary fs-2 ms-md-2"
+           role="button"
+           href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC"
+           target="_blank"
+        >Donate</a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <div class="about-vision-section" style="padding-bottom: 10px;">
       <img src="assets/img/about-vision.png" alt="about vision">
@@ -211,7 +226,7 @@
             <h2 class="text-uppercase fw-bold">Background</h2>
             <p class="my-3">
               <br /><span style="color: rgb(0, 0, 0)"
-                >Established in March of 2023, the poor health services due to
+                >Established in March 2023, the poor health services due to
                 inadequate health workers and lack of medical supplies in Kwale
                 County inspired us to begin our journey in paving the way for a
                 healthier future.</span
@@ -243,8 +258,7 @@
                 >Virtual Medical Missions was a dream birthed out of the desire
                 to provide long term medical access to areas of the world that
                 do not have proper health care. The CEO of VMM presented this
-                vision to the Innovators Club at Eastvale STEM Academy in March
-                of 2023, and they soon partnered with this dream. Teams of
+                vision to the Innovators Club at Eastvale STEM Academy in March 2023, and they soon partnered with this dream. Teams of
                 computer science students, engineering students, and pre-medical
                 students joined together to build an online platform that would
                 allow VMM to provide E-visits and telemedicine encounters to
@@ -279,7 +293,7 @@
             </h2>
             <p class="my-3">
               <br /><span style="color: rgb(0, 0, 0)"
-                >Established in March of 2023, the poor health services due to
+                >Established in March 2023, the poor health services due to
                 inadequate health workers and lack of medical supplies in Kwale
                 County inspired us to begin our journey in paving the way for a
                 healthier future.</span
@@ -331,7 +345,7 @@
             </p>
             <p style="text-align: center">
               <span style="color: rgb(254, 251, 241)"
-                >All donations in the United States are tax deductible.</span
+                >All donations in the United States are tax-deductible.</span
               >
             </p>
           </div>
