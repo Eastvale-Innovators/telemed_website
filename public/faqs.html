@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>FAQs - Virutal Medical Missions</title>
+    <title>FAQs - Virtual Medical Missions</title>
     <meta
       name="description"
       content="Frequently Asked Questions about Virtual Medical Missions, A non-profit medical organization focused on bringing telemedicine services to underprivileged areas"
@@ -30,298 +30,241 @@
       href="assets/img/logo_bg.png"
       type="image/x-icon"
     />
+    <style>
+      .faq-image-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: calc(75vh - 75px);
+        background: floralwhite;
+        color: #f4f6f7;
+        position: relative;
+        z-index: 1;
+        padding-bottom: 0;
+      }
+
+      .faq-image-section img {
+        width: 60%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 1;
+        margin-left: 0;
+      }
+
+      @media (max-width: 768px) {
+        .faq-image-section {
+          flex-direction: column;
+          text-align: center;
+          padding: 0;
+        }
+
+        .faq-image-section img {
+          width: 90%;
+          height: 100%;
+          margin-left: 0;
+          margin-bottom: 0;
+        }
+      }
+
+      .navbar-logo {
+        width: 168px;
+        height: 96px;
+        border-radius: 0;
+      }
+
+      .faq-text h2 {
+        font-size: 15em;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .faq-text h2 {
+          font-size: 6em;
+        }
+
+        .faq-text {
+          text-align: center;
+        }
+
+        .faq-image-section {
+          padding-bottom: 0;
+        }
+      }
+      .navbar-nav .nav-item .nav-link {
+        position: relative;
+        color: white;
+      }
+
+      .navbar-nav .nav-item .nav-link::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .navbar-nav .nav-item .nav-link:hover::before {
+        transform: scaleX(1);
+      }
+      .custom-toggler .navbar-toggler-icon {
+        filter: brightness(1) invert(1);
+      }
+      .navbar-nav .nav-item .nav-link.active {
+        position: relative;
+      }
+
+      .navbar-nav .nav-item .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+      }
+
+      @media (max-width: 767px) {
+        .navbar-nav {
+          text-align: center;
+        }
+
+        .navbar-nav .nav-item {
+          display: inline-block;
+          margin: 5px;
+        }
+        .navbar .btn {
+          display: block;
+          margin: 10px auto;
+        }
+      }
+    </style>
   </head>
 
   <body style="background: #fefbf1">
-    <nav
-      class="navbar navbar-expand-md bg-body py-3"
-      style="background: linear-gradient(#05445e, #05445e), #05445e"
+  <nav
+          class="navbar navbar-expand-md bg-body py-3"
+          style="background: linear-gradient(#05445e, #05445e), #05445e"
+  >
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#"></a
+      ><img class="navbar-logo" src="assets/img/logo_tr.png" width="168" height="96" alt="logo" /><button
+            data-bs-toggle="collapse"
+            class="navbar-toggler text-light"
+            data-bs-target="#navcol-2"
     >
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#"></a
-        ><img src="assets/img/logo_tr.png" width="168" height="96" /><button
-          data-bs-toggle="collapse"
-          class="navbar-toggler text-light"
-          data-bs-target="#navcol-1"
-        >
           <span class="visually-hidden">Toggle navigation</span
           ><span class="navbar-toggler-icon text-light text-opacity-75"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navcol-1">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item fs-2">
-              <a
-                class="nav-link active fs-2"
-                href="index.html"
-                style="
-                  font-size: 26px;
-                  color: #ffffff;
-                  margin-right: 5px;
-                  margin-left: 3px;
-                "
-                >Home</a
-              >
-            </li>
-            <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
-              <a
-                class="nav-link fs-2"
-                href="about.html"
-                style="
-                  font-size: 26px;
-                  color: #ffffff;
-                  margin-right: 1px;
-                  margin-left: 0px;
-                "
-                >About</a
-              >
-            </li>
-            <li
-              class="nav-item fs-2"
-              style="font-size: 26px; color: #ffffff; margin-right: -10px"
-            >
-              <a
-                class="nav-link fs-2"
-                href="team.html"
-                style="
-                  font-size: 26px;
-                  margin-right: 10px;
-                  color: #ffffff;
-                  margin-left: 5px;
-                "
-                >Team</a
-              >
-            </li>
-            <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
-              <a
-                class="nav-link active fs-2"
-                href="faqs.html"
-                style="
-                  font-size: 26px;
-                  color: #ffffff;
-                  margin-right: 5px;
-                  margin-left: 5px;
-                "
-                >FAQs</a
-              >
-            </li>
-          </ul>
-          <a
-            class="btn btn-primary fs-2 ms-md-2"
-            role="button"
-            href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC"
-            target="_blank"
-            >Donate</a
-          >
-        </div>
+    </button>
+      <div class="collapse navbar-collapse" id="navcol-2">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item fs-2">
+            <a class="nav-link fs-2" href="index.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
+            <a class="nav-link fs-2" href="about.html">
+              About
+            </a>
+          </li>
+          <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff;">
+            <a class="nav-link fs-2" href="team.html">
+              Team
+            </a>
+          </li>
+          <li class="nav-item fs-2" style="font-size: 26px; color: #ffffff">
+            <a class="nav-link active fs-2" href="faqs.html">
+              FAQs
+            </a>
+          </li>
+        </ul>
+        <a
+                class="btn btn-primary fs-2 ms-md-2"
+                role="button"
+                href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC"
+                target="_blank"
+        >Donate</a
+        >
       </div>
-    </nav>
-    <section class="py-4 py-xl-5">
+    </div>
+  </nav>
+
+    <div class="faq-image-section" style="padding-bottom: 10px;">
+      <img src="assets/img/faqs.png" alt="faq">
+    </div>
+
+
+    <h2 class="faq-text text-sm-center">
+      Frequently Asked Questions (FAQ's)
+    </h2>
+
+    <section class="py-5" style="font-size: 1.2em;">
       <div class="container">
-        <img class="img-fluid" src="assets/img/faqs.png" />
-      </div>
-    </section>
-    <section class="py-5 bg-light" style="background: #fefbf1">
-      <h1
-        class="text-center text-success"
-        style="
-          padding-top: 15px;
-          padding-bottom: 15px;
-          color: #000000 !important;
-          background: #fefbf1;
-        "
-      >
-        Frequently Asked Questions (FAQs)
-      </h1>
-      <div class="container" style="background: #fefbf1">
         <div class="row">
           <div class="col-md-6 offset-md-3">
             <div id="faqlist" class="accordion accordion-flush">
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button
-                    class="btn accordion-button collapsed"
-                    type="button"
-                    data-bs-target="#content-accordion-1"
-                    style="background: var(--bs-body-bg)"
-                    data-bs-toggle="collapse"
-                  >
-                    What is Telemedicine?
-                  </button>
+                  <button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-1"><strong>What is Telemedicine?</strong></button>
                 </h2>
-                <div
-                  id="content-accordion-1"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#faqlist"
-                >
-                  <p class="lead accordion-body">
-                    Telemedicine is the practice of providing healthcare
-                    services remotely using technology. Without requiring
-                    in-person visits, it enables the diagnosis, treatment, and
-                    patient monitoring of patients. It provides a flexible and
-                    convenient method for delivering healthcare, increasing
-                    access to medical services.
-                  </p>
+                <div id="content-accordion-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <p class="accordion-body">Telemedicine is the practice of providing healthcare services remotely using technology. Without requiring in-person visits, it enables the diagnosis, treatment, and patient monitoring of patients. It provides a flexible and convenient method for delivering healthcare, increasing access to medical services.</p>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button
-                    class="btn accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#content-accordion-2"
-                  >
-                    What services does your organization provide through
-                    telemedicine?
-                  </button>
+                  <button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-2"><strong>How do patients access telemedicine services in underserved areas?</strong></button>
                 </h2>
-                <div
-                  id="content-accordion-2"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#faqlist"
-                >
-                  <p class="accordion-body">
-                    Our organization seeks to achieve equal access to
-                    high-quality healthcare while improving healthcare access
-                    and results for undeveloped countries by offering direct and
-                    indirect access to medical advice and care via computer
-                    technology.
-                  </p>
+                <div id="content-accordion-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <p class="accordion-body">Telemedicine is the practice of providing healthcare services remotely using technology. Without requiring in-person visits, it enables the diagnosis, treatment, and patient monitoring of patients. It provides a flexible and convenient method for delivering healthcare, increasing access to medical services.</p>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button
-                    class="btn accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#content-accordion-5"
-                  >
-                    How to donate or become a donor?
-                  </button>
+                  <button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-3"><strong>What are your plans for future expansion and growth in reaching more underserved communities?</strong></button>
                 </h2>
-                <div
-                  id="content-accordion-5"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#faqlist"
-                >
-                  <p class="accordion-body">
-                    You can use this link:<br />
-                    <a
-                      href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC"
-                      target="_blank"
-                      >https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC</a
-                    >
-                    <br />
-                    or use the donate buttons in the menu bar and footer. All
-                    donation made in the United States are tax deductible.
-                  </p>
+                <div id="content-accordion-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <p class="accordion-body">Once we have successfully addressed and assisted those in need in Godo, Kenya, our next objective is to extend our services to nearby towns, countries, and hopefully globally. This expansion will take place once the volume of e-visits becomes manageable, ensuring that we can maintain the quality and effectiveness of our healthcare delivery.</p>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button
-                    class="btn accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#content-accordion-3"
-                  >
-                    How do patients access telemedicine services in underserved
-                    areas?
-                  </button>
+                  <button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-4"><strong>What services does your organization provide through telemedicine?</strong></button>
                 </h2>
-                <div
-                  id="content-accordion-3"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#faqlist"
-                >
-                  <p class="accordion-body">
-                    They will be able to access telemedicine services through a
-                    device that is capable of taking heart rate, blood pressure,
-                    EKG, oxygen, and temperature readings in a matter of
-                    seconds. These vital signs can then be transmitted via an
-                    app to medical volunteers in the United States, enabling
-                    remote medical professionals to assess and provide guidance
-                    in real-time.
-                  </p>
+                <div id="content-accordion-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <p class="accordion-body">Our organization seeks to achieve equal access to high-quality healthcare while improving healthcare access and results for undeveloped countries by offering direct and indirect access to medical advice and care via computer technology.</p>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button
-                    class="btn accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#content-accordion-4"
-                  >
-                    What kind of healthcare professionals are involved in
-                    telemedicine consultations?
-                  </button>
+                  <button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-5"><strong>What kind of healthcare professionals are involved in telemedicine consultations?</strong></button>
                 </h2>
-                <div
-                  id="content-accordion-4"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#faqlist"
-                >
-                  <p class="accordion-body">
-                    Our goal is to have an abundance of physicians, nurse
-                    practitioners, physician assistants, respiratory therapists,
-                    and nurses involved in the process of telemedicine
-                    consultations.
-                  </p>
+                <div id="content-accordion-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <p class="accordion-body">Our goal is to have an abundance of physicians, nurse practitioners, physician assistants, respiratory therapists, and nurses involved in the process of telemedicine consultations.</p>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button
-                    class="btn accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#content-accordion-5"
-                  >
-                    What are your plans for future expansion and growth in
-                    reaching more underserved communities?
-                  </button>
+                  <button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-6"><strong>How do you address connectivity issues or limited internet access in underserved regions?</strong></button>
                 </h2>
-                <div
-                  id="content-accordion-5"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#faqlist"
-                >
-                  <p class="accordion-body">
-                    Once we have successfully addressed and assisted those in
-                    need in Godo, Kenya, our next objective is to extend our
-                    services to nearby towns, countries, and hopefully globally.
-                    This expansion will take place once the volume of e-visits
-                    becomes manageable, ensuring that we can maintain the
-                    quality and effectiveness of our healthcare delivery.
-                  </p>
+                <div id="content-accordion-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <p class="accordion-body">By incorporating technologies such as Wi-Fi, solar power generators, batteries, and utilizing programs such as Starlink, we are committed to addressing connectivity issues and ensuring that individuals in underserved regions have access to quality telemedicine services.</p>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button
-                    class="btn accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#content-accordion-5"
-                  >
-                    How do you address connectivity issues or limited internet
-                    access in underserved regions?
-                  </button>
+                  <button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-7"><strong>How to donate or become a donor?</strong></button>
                 </h2>
-                <div
-                  id="content-accordion-5"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#faqlist"
-                >
-                  <p class="accordion-body">
-                    By incorporating technologies such as WiFi, solar power
-                    generators, batteries, and utilizing programs such as
-                    Starlink, we are committed to addressing connectivity issues
-                    and ensuring that individuals in underserved regions have
-                    access to quality telemedicine services.
-                  </p>
+                <div id="content-accordion-7" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <p class="accordion-body">You can use this link:
+                    <br><a href="https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC">https://www.paypal.com/donate/?hosted_button_id=ZBM3C55SAWJTC</a><br>
+                    or use the donate buttons in the menu bar and footer. All donations made in the United States are tax-deductible.</p>
                 </div>
               </div>
             </div>
@@ -329,6 +272,7 @@
         </div>
       </div>
     </section>
+
     <footer id="footerpad">
       <div class="container">
         <div class="row">
@@ -371,7 +315,7 @@
             </p>
             <p style="text-align: center">
               <span style="color: rgb(254, 251, 241)"
-                >All donations in the United States are tax deductible.</span
+                >All donations in the United States are tax-deductible.</span
               >
             </p>
           </div>
