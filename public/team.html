@@ -23,6 +23,10 @@
     />
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css" />
     <link rel="stylesheet" href="assets/css/team_style.css" />
+    <link rel="stylesheet" href="assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery-No-Gutters-baguetteBox.min.css">
     <link
       rel="shortcut icon"
       href="assets/img/logo_bg.png"
@@ -129,7 +133,7 @@
         font-size: 14px;
       }
 
-      .team-banner-section {
+      /* .team-banner-section {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -164,7 +168,7 @@
           margin-left: 0;
           margin-bottom: 0;
         }
-      }
+      } */
 
       .navbar-logo {
         width: 168px;
@@ -223,6 +227,20 @@
           margin: 10px auto;
         }
       }
+
+      .slide-content {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      @media (max-width: 576px) {
+        .slide-content {
+          top: 40%;
+        }
+      }
     </style>
   </head>
 
@@ -275,9 +293,25 @@
     </div>
   </nav>
 
-    <div class="team-banner-section" style="padding-bottom: 10px;">
-      <img src="assets/img/team_banner.png" alt="team">
+  <div class="simple-slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background: url('assets/img/team_banner2.jpg') center center / cover no-repeat; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/team_banner2.jpg');">
+          <div class="slide-content">
+            <h2 class="text-uppercase fw-bold text-white">Team Members</h2>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background: url('assets/img/team_banner3.JPG') center center / cover no-repeat; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/team_banner3.JPG');">
+          <div class="slide-content">
+            <h2 class="text-uppercase fw-bold text-white">Team Members</h2>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
+  </div>
 
     <h1 class="heading">Board of Directors</h1>
     <div class="image-container">
@@ -720,6 +754,10 @@
         </div>
       </div>
     </footer>
+    <script src="assets/bootstrap/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="assets/bootstrap/js/Simple-Slider.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/Lightbox-Gallery-No-Gutters-baguetteBox.min.js"></script>
+    <script src="assets/bootstrap/js/Lightbox-Gallery-No-Gutters-Lightbox-Gallery.js"></script>
   </body>
 </html>

@@ -31,7 +31,7 @@
       type="image/x-icon"
     />
     <style>
-      .about-vision-section {
+      /* .about-vision-section {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -67,6 +67,8 @@
           margin-bottom: 0;
         }
       }
+
+       */
 
       .navbar-logo {
         width: 168px;
@@ -125,6 +127,33 @@
           margin: 10px auto;
         }
       }
+      .banner {
+        height: 600px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      @media (max-width: 768px) {
+        .banner {
+          height: 300px;
+          background-position: top;
+        }
+
+        .col-md-6 {
+          justify-content: center;
+          text-align: center;
+        }
+
+        .col-md-6 > div {
+          max-width: 100%;
+        }
+
+        .text-light {
+          font-size: 1.3rem;
+        }
+      }
+
     </style>
   </head>
 
@@ -175,9 +204,19 @@
     </div>
   </nav>
 
-    <div class="about-vision-section" style="padding-bottom: 10px;">
-      <img src="assets/img/about-vision.png" alt="about vision">
+  <section>
+    <div class="banner" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/about-vision.png');">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-md-6 text-center text-md-start d-flex justify-content-center align-items-center">
+            <div>
+              <h1 class="text-uppercase fw-bold text-light">About</h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
     <section class="py-4 py-xl-5">
       <div class="container">

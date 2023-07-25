@@ -31,7 +31,7 @@
       type="image/x-icon"
     />
     <style>
-      .faq-image-section {
+      /* .faq-image-section {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -91,7 +91,8 @@
         .faq-image-section {
           padding-bottom: 0;
         }
-      }
+      }  */
+
       .navbar-nav .nav-item .nav-link {
         position: relative;
         color: white;
@@ -141,6 +142,33 @@
         .navbar .btn {
           display: block;
           margin: 10px auto;
+        }
+      }
+
+      .banner {
+        height: 600px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      @media (max-width: 768px) {
+        .banner {
+          height: 300px;
+          background-position: top;
+        }
+
+        .col-md-6 {
+          justify-content: center;
+          text-align: center;
+        }
+
+        .col-md-6 > div {
+          max-width: 100%;
+        }
+
+        .text-light {
+          font-size: 1.3rem;
         }
       }
     </style>
@@ -195,10 +223,19 @@
     </div>
   </nav>
 
-    <div class="faq-image-section" style="padding-bottom: 10px;">
-      <img src="assets/img/faqs.png" alt="faq">
+  <section>
+    <div class="banner" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/faqs.png');">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-md-6 text-center text-md-start d-flex justify-content-center align-items-center">
+            <div>
+              <h1 class="text-uppercase fw-bold text-light">Frequently Asked Questions (FAQs)</h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
+  </section>
 
     <h2 class="faq-text text-sm-center">
       Frequently Asked Questions (FAQ's)
